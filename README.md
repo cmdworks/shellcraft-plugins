@@ -1,8 +1,24 @@
-# shellcraft-plugins
+<h1 align="center">shellcraft-plugins</h1>
+
+<p align="center">
+  <a href="https://github.com/cmdworks/shellcraft-plugins/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/cmdworks/shellcraft-plugins/ci.yml?label=CI"></a>
+  <a href="LICENSE"><img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-blue"></a>
+  <img alt="plugin API 1" src="https://img.shields.io/badge/plugin%20API-1-success">
+  <a href="https://github.com/cmdworks/shellcraft"><img alt="works with shellcraft" src="https://img.shields.io/badge/works%20with-cmdworks%2Fshellcraft-orange?logo=rust"></a>
+  <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen"></a>
+</p>
+
+<p align="center"><b>Official plugins and themes for <a href="https://github.com/cmdworks/shellcraft">shellcraft</a></b>,<br>
+plus the guides for writing your own.</p>
+
+---
 
 The official plugins for [shellcraft](https://github.com/cmdworks/shellcraft), the fast single-binary
 shell customization tool, plus the documentation for writing your own and a list of community
 plugins.
+
+Needs [shellcraft](https://github.com/cmdworks/shellcraft) (install it with
+`curl -fsSL https://raw.githubusercontent.com/cmdworks/shellcraft/main/install.sh | sh`).
 
 ```bash
 shellcraft search                  # what is available
