@@ -31,6 +31,7 @@ root_sgr = "41;37"
 venv_prefix = " "
 aws_prefix = " "
 duration_format = "[\U000f13ab {d}]"
+min_duration_ms = 10
 jobs_format = "[ {n}]"
 
 # While this theme is active the git segment shows an icon, the branch and a red or green status icon.

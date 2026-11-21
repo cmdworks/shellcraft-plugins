@@ -37,7 +37,7 @@ description = "passionp theme: icons, a red-yellow-green arrow, background jobs 
 kind = "theme"
 version = "0.1.0"
 repo = "plugins/passionp"
-hash = "3cb3780ebf4803e9c87d21c98538baa3151f592a6cea2819405fbd27970a8b10"
+hash = "eaeedf49ac78e6c49d7c3625a1f24ee69001538feacb06404268ac8f43d5917c"
 
 [[plugin]]
 name = "themes"

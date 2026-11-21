@@ -40,6 +40,7 @@ a layout table the theme keeps shellcraft's own prompt.
 | `venv_prefix`, `aws_prefix` | text before the Python/conda/node environment name and the AWS profile |
 | `duration_format` | how the last command's duration looks, `{d}` is the time (`"[{d}]"`) |
 | `jobs_format` | how the background jobs look, `{n}` is the count |
+| `min_duration_ms` | show the duration from this many milliseconds on; used while the user has not set `[prompt] min_duration_ms` (default 2000) |
 
 Parts: `remote` (user@host over SSH), `root`, `venv` (virtualenv, conda, nvm), `aws` (`AWS_PROFILE`),
 `dir`, `segments` (git, versions and other plugin segments), `duration`, `status` (`[N]` after a failure),
