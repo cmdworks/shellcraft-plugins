@@ -1,0 +1,4 @@
+#!/bin/sh
+# Started in the background. See SHELLCRAFT_EVENT, SHELLCRAFT_CWD, SHELLCRAFT_EXIT,
+# SHELLCRAFT_DURATION_MS and SHELLCRAFT_COMMAND in the environment.
+: "$SHELLCRAFT_CWD"

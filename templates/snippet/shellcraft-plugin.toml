@@ -1,0 +1,10 @@
+api = 1
+name = "my-plugin"
+version = "0.1.0"
+description = "TODO: one line about my-plugin"
+license = "MIT"
+
+[snippets]
+zsh = "snippets/init.zsh"
+bash = "snippets/init.bash"
+fish = "snippets/init.fish"

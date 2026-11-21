@@ -1,0 +1,14 @@
+api = 1
+name = "cheats"
+version = "0.1.0"
+description = "Cheat sheets for git, tar and ssh (`shellcraft cheat <topic>`)"
+license = "MIT"
+
+[cheat.git]
+file = "cheats/git.txt"
+
+[cheat.tar]
+file = "cheats/tar.txt"
+
+[cheat.ssh]
+file = "cheats/ssh.txt"

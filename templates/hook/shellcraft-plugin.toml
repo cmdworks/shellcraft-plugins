@@ -1,0 +1,9 @@
+api = 1
+name = "my-plugin"
+version = "0.1.0"
+description = "TODO: one line about my-plugin"
+license = "MIT"
+
+[hook.main]
+event = "cd"          # cd (directory changed) or post (a command finished)
+run = "bin/hook"

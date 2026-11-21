@@ -1,0 +1,14 @@
+api = 1
+name = "git-aliases"
+version = "0.1.0"
+description = "Short git aliases: gs, ga, gc, gp, gl, gd, gco"
+license = "MIT"
+
+[aliases]
+gs = "git status -sb"
+ga = "git add"
+gc = "git commit"
+gp = "git push"
+gl = "git log --oneline --graph --decorate -20"
+gd = "git diff"
+gco = "git checkout"

@@ -1,0 +1,11 @@
+git
+  git status -sb              short status with branch
+  git add -p                  stage hunks interactively
+  git commit --amend --no-edit   add staged changes to the last commit
+  git switch -c name          new branch
+  git log --oneline --graph --decorate -20
+  git diff --staged           what will be committed
+  git stash -u / git stash pop   shelve and restore, including untracked files
+  git rebase -i HEAD~N        edit the last N commits
+  git restore --staged file   unstage a file
+  git reflog                  find lost commits

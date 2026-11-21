@@ -1,0 +1,23 @@
+#!/bin/sh
+# Prints the prompt segment for a Docker/Compose project: `docker:<context> +compose`.
+ctx=${DOCKER_CONTEXT:-}
+if [ -z "$ctx" ] && [ -f "$HOME/.docker/config.json" ]; then
+  ctx=$(sed -n 's/.*"currentContext"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "$HOME/.docker/config.json" | head -n 1)
+fi
+out=docker
+if [ -n "$ctx" ] && [ "$ctx" != default ]; then
+  out="$out:$ctx"
+elif [ -z "$ctx" ] && [ -n "${DOCKER_HOST:-}" ]; then
+  out="$out:remote"
+fi
+d=$PWD
+i=0
+while [ "$i" -lt 8 ]; do
+  for f in docker-compose.yml docker-compose.yaml compose.yml compose.yaml; do
+    if [ -f "$d/$f" ]; then out="$out +compose"; break 2; fi
+  done
+  [ "$d" = / ] && break
+  d=$(dirname "$d")
+  i=$((i + 1))
+done
+echo "[tool] $out"

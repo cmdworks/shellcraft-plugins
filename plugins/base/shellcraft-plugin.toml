@@ -1,0 +1,7 @@
+api = 1
+name = "base"
+version = "0.1.0"
+description = "Starter set: git aliases, docker, themes and cheat sheets"
+license = "MIT"
+kind = "profile"
+requires = ["git-aliases", "docker", "themes", "cheats"]

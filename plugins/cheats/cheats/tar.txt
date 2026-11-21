@@ -1,0 +1,7 @@
+tar
+  tar czf out.tgz dir/        create a gzip archive
+  tar xzf in.tgz              extract a gzip archive
+  tar tf in.tgz               list contents
+  tar xf in.tar -C dest/      extract into a directory
+  tar --zstd -cf out.tzst dir/   create a zstd archive
+  extract file                shellcraft shell function: pick the right tool by extension

@@ -1,0 +1,3 @@
+#!/bin/sh
+# Runs as `shellcraft my-plugin <args>`.
+echo "my-plugin: $*"

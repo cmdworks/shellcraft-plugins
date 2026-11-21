@@ -1,0 +1,15 @@
+api = 1
+name = "docker"
+version = "0.1.0"
+description = "Docker/Compose project marker with the active context; podman fallback and d, dc, dps, dsh, dlogs helpers"
+license = "MIT"
+kind = "feature"
+
+[segment.main]
+command = "bin/segment"
+when = { files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml", "compose.yml", "compose.yaml", ".dockerignore"] }
+
+[snippets]
+zsh = "snippets/init.sh"
+bash = "snippets/init.sh"
+fish = "snippets/init.fish"

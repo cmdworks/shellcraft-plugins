@@ -1,0 +1,40 @@
+# shellcraft plugin registry
+[[plugin]]
+name = "base"
+description = "Starter set: git aliases, docker, themes and cheat sheets"
+kind = "profile"
+version = "0.1.0"
+repo = "plugins/base"
+hash = "4cfd421e85616f6f491c8ef0b0148f0b1f5eebbfd51eb68c134dc6ba59f3552c"
+
+[[plugin]]
+name = "cheats"
+description = "Cheat sheets for git, tar and ssh (`shellcraft cheat <topic>`)"
+kind = "feature"
+version = "0.1.0"
+repo = "plugins/cheats"
+hash = "e30c7fe11649be89f6d007ce605796b43347a2c84e6a96bf3c74d22af285e978"
+
+[[plugin]]
+name = "docker"
+description = "Docker/Compose project marker with the active context; podman fallback and d, dc, dps, dsh, dlogs helpers"
+kind = "feature"
+version = "0.1.0"
+repo = "plugins/docker"
+hash = "752aa26740707b75f1ba123795ebfdc94eb42395d45f3cc6fe12fdd569563953"
+
+[[plugin]]
+name = "git-aliases"
+description = "Short git aliases: gs, ga, gc, gp, gl, gd, gco"
+kind = "feature"
+version = "0.1.0"
+repo = "plugins/git-aliases"
+hash = "ac514d76c90b016e46f37fe7e1f1812eb46499fe6cfb3262f2430b439b25b5cf"
+
+[[plugin]]
+name = "themes"
+description = "Colour themes: nord, dracula, gruvbox (prompt, fzf, bat, shell highlighting)"
+kind = "theme"
+version = "0.1.0"
+repo = "plugins/themes"
+hash = "8e855a7e0ae293285bbd15f9e77b60d4df20f82426dad5ffaadad1040241f07f"

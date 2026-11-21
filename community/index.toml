@@ -1,0 +1,11 @@
+# shellcraft community plugin index: plugins that live in other repositories.
+# Format and rules: docs/community-plugins.md. Every entry needs repo, rev and hash.
+#
+# [[plugin]]
+# name = "example"
+# version = "1.0.0"
+# description = "One line about it"
+# kind = "feature"
+# repo = "owner/shellcraft-example"
+# rev = "v1.0.0"
+# hash = "<sha256 of the plugin files>"

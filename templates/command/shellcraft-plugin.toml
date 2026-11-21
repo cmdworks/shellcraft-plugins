@@ -1,0 +1,9 @@
+api = 1
+name = "my-plugin"
+version = "0.1.0"
+description = "TODO: one line about my-plugin"
+license = "MIT"
+
+[command.my-plugin]
+run = "bin/my-plugin"
+about = "TODO: what `shellcraft my-plugin` does"

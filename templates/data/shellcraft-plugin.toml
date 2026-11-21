@@ -1,0 +1,14 @@
+api = 1
+name = "my-plugin"
+version = "0.1.0"
+description = "TODO: one line about my-plugin"
+license = "MIT"
+
+[aliases]
+# ll = "ls -lah"
+
+[abbr]
+# gco = "git checkout"
+
+[env]
+# EDITOR = "nvim"

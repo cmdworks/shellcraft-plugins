@@ -1,0 +1,7 @@
+ssh
+  ssh -L 8080:localhost:80 host   forward a local port to the host
+  ssh -J jump host                connect through a jump host
+  ssh-keygen -t ed25519           new key
+  ssh-copy-id host                install your key on a host
+  ssh -O exit host                close a shared connection
+  scp -r dir host:path            copy a directory

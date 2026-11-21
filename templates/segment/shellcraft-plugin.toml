@@ -1,0 +1,14 @@
+api = 1
+name = "my-plugin"
+version = "0.1.0"
+description = "TODO: one line about my-plugin"
+license = "MIT"
+
+[segment.main]
+command = "bin/segment"
+ttl_ms = 10000
+when = { files = [".git"] }   # show only in projects that have one of these
+
+[permissions]
+exec = []
+network = false

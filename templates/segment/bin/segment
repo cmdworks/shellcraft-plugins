@@ -1,0 +1,3 @@
+#!/bin/sh
+# Print one line. Optional tone prefix: [git] [version] [tool] [warn] [dim]
+echo "[tool] my-plugin"

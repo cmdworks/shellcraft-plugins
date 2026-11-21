@@ -1,0 +1,32 @@
+name: ci
+
+# Builds run only when a version tag is pushed (vX.Y.Z), never on ordinary pushes or pull requests.
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  check:
+    name: check plugins (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - name: shells the snippets are checked with
+        run: |
+          if [ "$RUNNER_OS" = Linux ]; then sudo apt-get update && sudo apt-get install -y zsh fish; else brew install fish; fi
+      - name: install shellcraft
+        # the latest release when there is one, otherwise built from source
+        run: |
+          if curl -fsSL https://raw.githubusercontent.com/cmdworks/shellcraft/main/install.sh | SHELLCRAFT_NO_RC=1 sh; then
+            echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          else
+            echo "no release yet: building shellcraft from source"
+            cargo install --git https://github.com/cmdworks/shellcraft --locked shellcraft
+          fi
+      - run: shellcraft --version
+      - name: validate every plugin and template, and that the index matches the files
+        run: scripts/check-all.sh
