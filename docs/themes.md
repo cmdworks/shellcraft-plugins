@@ -2,7 +2,7 @@
 
 A theme is a plugin with `kind = "theme"` and a `[theme.<name>]` table. It can change **colours**, and
 the **shape of the prompt**. Users pick it with `shellcraft theme <name>`. Examples:
-[`plugins/themes`](../plugins/themes) (colours only) and [`plugins/passionp`](../plugins/passionp)
+[`themes/colors`](../themes/colors) (colours only) and [`themes/passionp`](../themes/passionp)
 (a full layout).
 
 ## Colours

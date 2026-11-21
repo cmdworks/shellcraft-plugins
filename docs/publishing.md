@@ -2,7 +2,7 @@
 
 ## For a plugin in this repository (official)
 
-1. Put the plugin in `plugins/<name>/` and raise `version` in its manifest whenever the files change.
+1. Put the plugin in `plugins/<name>/` (a theme goes in `themes/<name>/`) and raise `version` in its manifest whenever the files change.
 2. Regenerate its index entry (version, description, kind, content hash):
 
    ```bash

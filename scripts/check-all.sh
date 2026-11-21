@@ -5,14 +5,14 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 command -v shellcraft >/dev/null || { echo "install shellcraft first" >&2; exit 1; }
 fail=0
-for dir in plugins/*/ templates/*/; do
+for dir in plugins/*/ themes/*/ templates/*/; do
   [ -f "$dir/shellcraft-plugin.toml" ] || continue   # templates/github-actions is not a plugin
   if shellcraft plugin check "$dir" >/dev/null 2>&1; then echo "ok    $dir"; else echo "FAIL  $dir"; shellcraft plugin check "$dir" || true; fail=1; fi
 done
 # the index must describe the files as they are now: publishing into a copy must change nothing
 tmp=$(mktemp -d); trap 'rm -rf "$tmp"' EXIT
 cp index.toml "$tmp/index.toml"
-for dir in plugins/*/; do
+for dir in plugins/*/ themes/*/; do
   name=$(basename "$dir")
   shellcraft registry publish "$tmp" "$dir" >/dev/null
 done

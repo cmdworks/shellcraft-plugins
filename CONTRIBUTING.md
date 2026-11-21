@@ -6,7 +6,7 @@ and the list of community plugins. Changes to the shellcraft program itself go t
 
 ## Ways to contribute
 
-- **Fix or improve an official plugin**: edit `plugins/<name>/`, bump its `version`, open a pull request.
+- **Fix or improve an official plugin**: edit `plugins/<name>/` (or `themes/<name>/`), bump its `version`, open a pull request.
 - **Add an official plugin**: open an issue first describing what it does and why it should be official
   (small, broadly useful, no network or account needed). Then follow [Getting started](docs/getting-started.md).
 - **List a community plugin**: add an entry to `community/index.toml`
