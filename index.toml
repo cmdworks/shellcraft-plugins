@@ -1,11 +1,12 @@
 # shellcraft plugin registry
+
 [[plugin]]
 name = "base"
-description = "Starter set: git aliases, docker, themes and cheat sheets"
+description = "Starter set: git aliases, docker, the nord, dracula and gruvbox themes and cheat sheets"
 kind = "profile"
 version = "0.1.0"
 repo = "plugins/base"
-hash = "4cfd421e85616f6f491c8ef0b0148f0b1f5eebbfd51eb68c134dc6ba59f3552c"
+hash = "c36f98600c8a878b3269560ceb7186dfae4217731d412dabbf52d4c43432924b"
 
 [[plugin]]
 name = "cheats"
@@ -24,6 +25,14 @@ repo = "plugins/docker"
 hash = "752aa26740707b75f1ba123795ebfdc94eb42395d45f3cc6fe12fdd569563953"
 
 [[plugin]]
+name = "dracula"
+description = "dracula colour theme (prompt, fzf, bat, shell highlighting)"
+kind = "theme"
+version = "0.1.0"
+repo = "themes/dracula"
+hash = "0318c6923521fd564f9f6c86b483b2d8ea3aacdbbf33170c5439210d3d160a7d"
+
+[[plugin]]
 name = "git-aliases"
 description = "Short git aliases: gs, ga, gc, gp, gl, gd, gco"
 kind = "feature"
@@ -32,17 +41,25 @@ repo = "plugins/git-aliases"
 hash = "ac514d76c90b016e46f37fe7e1f1812eb46499fe6cfb3262f2430b439b25b5cf"
 
 [[plugin]]
+name = "gruvbox"
+description = "gruvbox colour theme (prompt, fzf, bat, shell highlighting)"
+kind = "theme"
+version = "0.1.0"
+repo = "themes/gruvbox"
+hash = "0f160f802611810b686cfb0c3d49c166abdae14f87db086822c58b858dcd1ba0"
+
+[[plugin]]
+name = "nord"
+description = "nord colour theme (prompt, fzf, bat, shell highlighting)"
+kind = "theme"
+version = "0.1.0"
+repo = "themes/nord"
+hash = "0143ee214579d2caddb78ae0997294d43eaf52f3d93e315de9b5a16e1a8cc766"
+
+[[plugin]]
 name = "passionp"
 description = "passionp theme: icons, a red-yellow-green arrow, background jobs and command time on the right (needs a Nerd Font)"
 kind = "theme"
 version = "0.1.0"
 repo = "themes/passionp"
 hash = "eaeedf49ac78e6c49d7c3625a1f24ee69001538feacb06404268ac8f43d5917c"
-
-[[plugin]]
-name = "themes"
-description = "Colour themes: nord, dracula, gruvbox (prompt, fzf, bat, shell highlighting)"
-kind = "theme"
-version = "0.1.0"
-repo = "themes/colors"
-hash = "8e855a7e0ae293285bbd15f9e77b60d4df20f82426dad5ffaadad1040241f07f"

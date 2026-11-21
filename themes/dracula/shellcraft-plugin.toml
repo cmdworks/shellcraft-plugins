@@ -1,0 +1,18 @@
+api = 1
+name = "dracula"
+version = "0.1.0"
+description = "dracula colour theme (prompt, fzf, bat, shell highlighting)"
+license = "MIT"
+kind = "theme"
+
+[theme.dracula]
+dir = "38;5;117"
+git = "38;5;212"
+duration = "38;5;228"
+ok = "38;5;84"
+err = "38;5;203"
+dim = "38;5;61"
+version = "38;5;141"
+tool = "38;5;81"
+fzf = "--color=fg:#f8f8f2,bg+:#44475a,hl:#bd93f9,fg+:#f8f8f2,pointer:#ff79c6,prompt:#50fa7b,info:#6272a4"
+bat = "Dracula"

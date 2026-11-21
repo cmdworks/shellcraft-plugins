@@ -22,7 +22,7 @@ Needs [shellcraft](https://github.com/cmdworks/shellcraft) (install it with
 
 ```bash
 shellcraft search                  # what is available
-shellcraft install docker themes   # install by name, no configuration
+shellcraft install docker nord      # install by name, no configuration
 shellcraft update                  # keep them current
 ```
 
@@ -33,10 +33,10 @@ repository is where they are developed and where newer versions appear between s
 
 | Plugin | Kind | What it does |
 | :--- | :--- | :--- |
-| [`base`](plugins/base) | profile | Starter set: installs `git-aliases`, `docker`, `themes` and `cheats` |
+| [`base`](plugins/base) | profile | Starter set: installs `git-aliases`, `docker`, `nord`, `dracula`, `gruvbox` and `cheats` |
 | [`docker`](plugins/docker) | feature | Docker/Compose marker in the prompt with the active context; podman fallback; `d`, `dc`, `dps`, `dsh`, `dlogs` |
 | [`git-aliases`](plugins/git-aliases) | feature | `gs`, `ga`, `gc`, `gp`, `gl`, `gd`, `gco` |
-| [`themes`](themes/colors) | theme | `nord`, `dracula`, `gruvbox` for the prompt, fzf, bat and shell highlighting |
+| [`nord`](themes/nord) · [`dracula`](themes/dracula) · [`gruvbox`](themes/gruvbox) | theme | colours for the prompt, fzf, bat and shell highlighting (one plugin per theme) |
 | [`passionp`](themes/passionp) | theme | icons, a red-yellow-green arrow, jobs and command time on the right (Nerd Font) |
 | [`cheats`](plugins/cheats) | feature | Cheat sheets for git, tar and ssh (`shellcraft cheat <topic>`) |
 

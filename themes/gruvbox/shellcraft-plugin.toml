@@ -1,0 +1,18 @@
+api = 1
+name = "gruvbox"
+version = "0.1.0"
+description = "gruvbox colour theme (prompt, fzf, bat, shell highlighting)"
+license = "MIT"
+kind = "theme"
+
+[theme.gruvbox]
+dir = "38;5;109"
+git = "38;5;175"
+duration = "38;5;214"
+ok = "38;5;142"
+err = "38;5;167"
+dim = "38;5;245"
+version = "38;5;108"
+tool = "38;5;72"
+fzf = "--color=bg+:#3c3836,hl:#fabd2f,fg+:#ebdbb2,pointer:#fb4934,prompt:#b8bb26,info:#928374"
+bat = "gruvbox-dark"
