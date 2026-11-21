@@ -32,6 +32,14 @@ repo = "plugins/git-aliases"
 hash = "ac514d76c90b016e46f37fe7e1f1812eb46499fe6cfb3262f2430b439b25b5cf"
 
 [[plugin]]
+name = "passionp"
+description = "passionp theme: icons, a red-yellow-green arrow, background jobs and command time on the right (needs a Nerd Font)"
+kind = "theme"
+version = "0.1.0"
+repo = "plugins/passionp"
+hash = "3cb3780ebf4803e9c87d21c98538baa3151f592a6cea2819405fbd27970a8b10"
+
+[[plugin]]
 name = "themes"
 description = "Colour themes: nord, dracula, gruvbox (prompt, fzf, bat, shell highlighting)"
 kind = "theme"

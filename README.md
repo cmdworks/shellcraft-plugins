@@ -21,6 +21,7 @@ repository is where they are developed and where newer versions appear between s
 | [`docker`](plugins/docker) | feature | Docker/Compose marker in the prompt with the active context; podman fallback; `d`, `dc`, `dps`, `dsh`, `dlogs` |
 | [`git-aliases`](plugins/git-aliases) | feature | `gs`, `ga`, `gc`, `gp`, `gl`, `gd`, `gco` |
 | [`themes`](plugins/themes) | theme | `nord`, `dracula`, `gruvbox` for the prompt, fzf, bat and shell highlighting |
+| [`passionp`](plugins/passionp) | theme | icons, a red-yellow-green arrow, jobs and command time on the right (Nerd Font) |
 | [`cheats`](plugins/cheats) | feature | Cheat sheets for git, tar and ssh (`shellcraft cheat <topic>`) |
 
 Community plugins are listed in [`community/index.toml`](community/index.toml); see
@@ -32,11 +33,12 @@ Community plugins are listed in [`community/index.toml`](community/index.toml); 
 1. [Getting started](docs/getting-started.md): a plugin in ten minutes.
 2. [Plugin kinds](docs/plugin-kinds.md): a worked example of each (prompt segment, command, hook,
    shell snippet, theme, cheat sheet, prebuilt binary).
-3. [Publishing](docs/publishing.md): versions, the index, signing.
+3. [Writing a theme](docs/themes.md): colours, the shape of the prompt, icons.
+4. [Publishing](docs/publishing.md): versions, the index, signing.
    [Plugins with compiled code](docs/binary-plugins.md): prebuilt binaries and a release workflow.
    Where plugins can live (this repository, your own GitHub or git repository, a folder of a repository):
    [distribution rules](https://github.com/cmdworks/shellcraft/blob/main/docs/plugin-distribution.md).
-4. [Review checklist](docs/review-checklist.md): what reviewers look at.
+5. [Review checklist](docs/review-checklist.md): what reviewers look at.
 
 The manifest format and everything shellcraft promises to plugins is the **plugin API**, versioned
 and documented in the main repository:

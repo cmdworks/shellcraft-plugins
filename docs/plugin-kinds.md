@@ -98,8 +98,9 @@ err = "38;5;167"
 # also: duration, dim, version, tool, fzf, bat
 ```
 
-Missing fields keep the default theme's. Users pick it with `shellcraft theme nord`. A real one:
-[`plugins/themes`](../plugins/themes).
+Missing fields keep the default theme's. Users pick it with `shellcraft theme nord`. A theme can also change
+the shape of the prompt (icons, a multi-colour symbol, a right-hand prompt): see [themes.md](themes.md). Real ones:
+[`plugins/themes`](../plugins/themes) (colours) and [`plugins/passionp`](../plugins/passionp) (a full layout).
 
 ## Cheat sheet
 

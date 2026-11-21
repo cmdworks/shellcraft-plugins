@@ -1,0 +1,40 @@
+api = 1
+name = "passionp"
+version = "0.1.0"
+description = "passionp theme: icons, a red-yellow-green arrow, background jobs and command time on the right (needs a Nerd Font)"
+license = "MIT"
+kind = "theme"
+
+# Colours (SGR): cyan directory and git, green ok, red error, yellow durations and AWS.
+[theme.passionp]
+dir = "36"
+git = "36"
+duration = "33"
+ok = "32"
+err = "31"
+dim = "90"
+version = "32"
+tool = "1;34"
+
+# The shape of the prompt. Icons are Nerd Font glyphs written as \u escapes:
+#   f07c folder, f023 lock, f418 git branch, f044 dirty, f058 clean, f00d cross, f013 gear,
+#   f270 AWS, e73c Python, 000f13ab timer.
+[theme.passionp.layout]
+left = ["root", "venv", "aws", "dir", "segments", "symbol"]
+right = ["jobs", "duration"]
+dir_prefix = " "
+dir_lock = " "
+symbol_ok = ["1;31:❯", "1;33:❯", "1;32:❯"]
+symbol_err = ["1;31: {status} ❯❯❯"]
+root_text = " ⚡ ROOT "
+root_sgr = "41;37"
+venv_prefix = " "
+aws_prefix = " "
+duration_format = "[\U000f13ab {d}]"
+jobs_format = "[ {n}]"
+
+# While this theme is active the git segment shows an icon, the branch and a red or green status icon.
+[theme.passionp.options.git]
+prefix = " "
+dirty = " "
+clean = " "
